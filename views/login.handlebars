@@ -1,0 +1,161 @@
+{{>header}}
+
+<div class="main h-screen flex">
+    <div class="main-sidebar w-1/5 bg-gray-500 border-black border-t-2 p-6">
+        <div class="sidebar-categories">
+            <div class="sidebar-main-category text-black cursor-pointer flex font-bold p-2 bg-gray-200 rounded-lg">
+                <span class="w-8 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                    </svg>
+                </span>  
+                <span>Categories</span>
+            </div>
+           
+            <div class="sidebar-main-category text-black cursor-poimter flex font-bold p-2">
+                <span class="w-8"></span>
+                <span>$0-$25</span>
+            </div>
+            <div class="sidebar-main-category text-black cursor-poimter flex font-bold p-2">
+                <span class="w-8"></span>
+                <span>$25-$50</span>
+            </div>
+            <div class="sidebar-main-category text-black cursor-poimter flex font-bold p-2 mb-2">
+                <span class="w-8"></span>
+                <span>$50+++</span>
+            </div>
+            <div class="sidebar-main-category text-black cursor-poimter flex font-bold p-2">
+                <span class="w-8"></span>
+                <span>Sports</span>
+            </div>
+            <div class="sidebar-main-category text-black cursor-poimter flex font-bold p-2">
+                <span class="w-8"></span>
+                <span>Toys</span>
+            </div>
+            <div class="sidebar-main-category text-black cursor-poimter flex font-bold p-2">
+                <span class="w-8"></span>
+                <span>Clothing</span>
+            </div>
+            <div class="sidebar-main-category text-black cursor-poimter flex font-bold p-2">
+                <span class="w-8"></span>
+                <span>Electronics</span>
+            </div>
+            <div class="sidebar-main-category text-black cursor-poimter flex font-bold p-2 ">
+                <span class="w-8"></span>
+                <span>Homemade</span>
+            </div>
+             <div class="sidebar-main-category text-black cursor-poimter flex font-bold p-2">
+                <span class="w-8"></span>
+                <span>Misc</span>
+            </div>
+            <div class="sidebar-main-category text-black cursor-poimter flex font-bold p-2 hover:bg-red-200 rounded-xl mb-4">
+                <a href='/login'>
+                <span class="w-8">
+                    <i class="fa-solid fa-percent"></i>
+                </span>
+                <span>Sell on RandomShit</span>
+                </a>
+            </div>
+            <div class="sidebar-main-category text-black cursor-poimter flex font-bold p-2 hover:bg-red-200 rounded-xl md-4">
+                <span class="w-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </span>
+                <span>Help</span>
+            </div>
+
+        </div>
+
+    </div>
+
+ <section class="flex max-h-full w-full">
+            <main class="w-96 bg-pink-400  p-7 space-y-5 hidden md:block">
+                    <header>
+                            <nav class="p-3">
+                                    <h4 style="font-family: 'Fuzzy bubbles', 'cursive'" class="text-3xl text-white font-normal uppercase">RandomSh!t</h4>
+                            </nav>
+                    </header>
+
+                    <div class="p-3 my7 space-y-6">
+                        <h1 style="font-family: 'Fuzzy bubbles', 'cursive'" class="text-2xl  text-white font-semibold">
+                            The best resource for selling RandomShit
+                        </h1>
+                        <p class="text-white text-sm" style="font-family: 'inter';">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti iusto nostrum sit placeat reprehenderit temporibus, fuga nihil mollitia id culpa?
+                        </p>
+                    </div>
+
+                    <div>
+                        <img src="./reader.png" alt="reader">
+                    </div>
+            </main>
+
+
+            <main class="flex-auto bg-white space-y-7 p-2">
+                    
+
+                    <div class="flex items-center justify-center p-5">
+                        <h4 style="font-family:'Fuzzy bubbles', 'cursive'" class="text-3xl font-black text-black">
+                            Log in
+                        </h4>
+                    </div>
+
+               <section class="flex flex-col items-center justify-center">
+                    <form action="#" class="space-y-4">
+                        <div class="email">
+                            <div class="relative mt-1">
+                                <input type="email" id="emailInp" 
+                                class="p-4 w-80 h-10 rounded pl-10 text-sm focus:outline-none border border-gray-200 focus:border-red-400 font-light" placeholder="email address">
+
+                                <svg class="w-4 h-4 absolute top-0 m-3 text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z" clip-rule="evenodd"></path></svg>
+                            </div>
+                        </div>  
+
+                        <div class="password">
+                              <div class="relative mt-1 mb-2">
+                                  <input type="password"  id="passwordInp" class="p-4 w-80 h-10 rounded pl-10 text-sm focus:outline-none border border-gray-200 focus:border-red-400 font-light" placeholder="password">
+                                  <svg class="w-4 h-4 absolute top-0 m-3 text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clip-rule="evenodd"></path></svg>
+                              </div>  
+                        </div>
+
+                        <button class="focus:outline-none bg-green-200  hover:bg-green-400 focus:bg-green-600 focus:ring focus:ring-black w-80 h-9 text-white rounded">Log in</button>
+                    </form>
+               </section>
+
+               <section class="flex flex-col items-center justify-center space-y-4">
+                <h2 class="text-gray-400"><span> or login with</span></h2>
+                    <div>
+                        <ul class="flex items-center justify-around space-x-5">
+                            <a href="#">
+                                <li class="border border-red-400 w-10 h-10 rounded flex items-center justify-center text-red-400 hover:bg-red-400 hover:text-white">
+                                    <i class="fab fa-google"></i>
+                                </li>
+                            </a>
+
+                            <a href="#">
+                                <li class="border border-red-400 w-10 h-10 rounded flex items-center justify-center text-red-400 hover:bg-red-400 hover:text-white">
+                                    <i class="fab fa-facebook-f"></i>
+                                </li>
+                            </a>
+
+                            <a href="#">
+                                <li class="border border-red-400 w-10 h-10 rounded flex items-center justify-center text-red-400 hover:bg-red-400 hover:text-white">
+                                    <i class="fab fa-linkedin"></i>
+                                </li>
+                            </a>
+
+                            <a href="#">
+                                <li class="border border-red-400 w-10 h-10 rounded flex items-center justify-center text-red-400 hover:bg-red-400 hover:text-white">
+                                    <i class="fab fa-apple"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="sign_up_link space-x-1">
+                        <span class="text-sm font-light">Don't have an account?</span> <a class="text-red-500 hover:text-red-600 text-sm font-light hover:underline" href="#">Sign up</a>
+                    </div>
+               </section>
+            </main>
+    </section>
