@@ -14,7 +14,7 @@ USE random_shit;
 -- CREATE TABLE price (
 --   id INTEGER AUTO_INCREMENT PRIMARY KEY,
 --   lower DECIMAL NOT NULL,
---   uppper DECIMAL
+--   upper DECIMAL
 
 -- );
 

@@ -1,47 +1,47 @@
-var mysql = require('mysql');
+// var mysql = require('mysql');
 
-var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "Laceybabe#10213!",
-  database: "random_shit"
-});
+// var con = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   password: "Laceybabe#10213!",
+//   database: "random_shit"
+// });
 
-con.connect(function(err) {
-  if (err) throw err;
-  con.query("SELECT * FROM Products", function (err, result, fields) {
-    if (err) throw err;
-    console.log(result);
-  });
-});
+// con.connect(function(err) {
+//   if (err) throw err;
+//   con.query("SELECT * FROM Products", function (err, result, fields) {
+//     if (err) throw err;
+//     console.log(result);
+//   });
+// });
 
-con.connect(function(err) {
-    if (err) throw err;
-    var sql = "UPDATE Products SET id = '${id}' WHERE id = '${id}'";
-    con.query(sql, function (err, result) {
-      if (err) throw err;
-      console.log(result.affectedRows + " record(s) updated");
-    });
-  });
+// con.connect(function(err) {
+//     if (err) throw err;
+//     var sql = "UPDATE Products SET id = '${id}' WHERE id = '${id}'";
+//     con.query(sql, function (err, result) {
+//       if (err) throw err;
+//       console.log(result.affectedRows + " record(s) updated");
+//     });
+//   });
 
-  con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-    var sql = "INSERT INTO Products (id, title, product_id, price, description, rating) VALUES ('${id}', '${title}', '${product_id}', '${price}', '${description}', ${rating}')";
-    con.query(sql, function (err, result) {
-      if (err) throw err;
-      console.log("1 record inserted");
-    });
-  });
+//   con.connect(function(err) {
+//     if (err) throw err;
+//     console.log("Connected!");
+//     var sql = "INSERT INTO Products (id, title, product_id, price, description, rating) VALUES ('${id}', '${title}', '${product_id}', '${price}', '${description}', ${rating}')";
+//     con.query(sql, function (err, result) {
+//       if (err) throw err;
+//       console.log("1 record inserted");
+//     });
+//   });
 
-  con.connect(function(err) {
-    if (err) throw err;
-    var sql = "UPDATE customers Products title = '${title}' WHERE title = '${title}'";
-    con.query(sql, function (err, result) {
-      if (err) throw err;
-      console.log(result.affectedRows + " record(s) updated");
-    });
-  });
+//   con.connect(function(err) {
+//     if (err) throw err;
+//     var sql = "UPDATE customers Products title = '${title}' WHERE title = '${title}'";
+//     con.query(sql, function (err, result) {
+//       if (err) throw err;
+//       console.log(result.affectedRows + " record(s) updated");
+//     });
+//   });
 //function getProducts() {
 //   db.collection("Products").get().then((querySnapshot) => {
 //        let Products = [];

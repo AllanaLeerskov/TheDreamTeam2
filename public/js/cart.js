@@ -1,44 +1,44 @@
-function getCartItems() {
-    db.collection('cart-items').onSnapshot((snapshot) =>{
-        let cartItems = [];
-        snapshot.docs.forEach((doc) => {
-            items.push({
-                id: doc.id,
-                ...doc.data()
+// function getCartItems() {
+//     db.collection('cart-items').onSnapshot((snapshot) =>{
+//         let cartItems = [];
+//         snapshot.docs.forEach((doc) => {
+//             items.push({
+//                 id: doc.id,
+//                 ...doc.data()
 
                 
-            })
+//             })
            
-        })
-        generateCartItems(cartItems);
-    })
-}
+//         })
+//         generateCartItems(cartItems);
+//     })
+// }
 
-function decreaseCount(itemID) {
-    let cartItem = db.collection('cart-tems').doc(itemID);
-    cartItem.get().then(function(doc) {
-        if (doc.exists) {
-            if (doc.data().quantity > 1) {
-                cartItem.update({
-                    quantity: doc.data().quantity - 1
-                })
-            }
-        }
-    })
-}
+// function decreaseCount(itemID) {
+//     let cartItem = db.collection('cart-tems').doc(itemID);
+//     cartItem.get().then(function(doc) {
+//         if (doc.exists) {
+//             if (doc.data().quantity > 1) {
+//                 cartItem.update({
+//                     quantity: doc.data().quantity - 1
+//                 })
+//             }
+//         }
+//     })
+// }
 
-function increaseCount(itemId) {
-    let cartItem = db.collection('cart-items').doc(itemId);
-    cartItem.get().then(function(doc) {
-        if (doc.exists) {
-            if(doc.data().quantity>0 ) {
-                cartItem.update({
-                    quantity: doc.data().quantity + 1
-                })
-            }
-        }
-    })
-}
+// function increaseCount(itemId) {
+//     let cartItem = db.collection('cart-items').doc(itemId);
+//     cartItem.get().then(function(doc) {
+//         if (doc.exists) {
+//             if(doc.data().quantity>0 ) {
+//                 cartItem.update({
+//                     quantity: doc.data().quantity + 1
+//                 })
+//             }
+//         }
+//     })
+// }
 
 function generateCartItems(cartItems) {
     let itemsHTML = '';
@@ -96,4 +96,4 @@ function createEventListeners( ){
     })
 }
 
-getCartItems();
+// getCartItems();

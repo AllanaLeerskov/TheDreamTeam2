@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname + '/public')));
 
-//app.use(routes);
+
 
 const PORT = 3000;
 
@@ -25,32 +25,32 @@ app.set("view engine", "handlebars");
 
 app.engine('handlebars', hbs.engine);
 
-
+app.use(routes);
 
 //routing
-router.get('/', (req, res) => {
-    res.render('homepage'
-   , { 
-        title: 'Random$h!t.com Home'
-   }
-     );
-});
+// router.get('/', (req, res) => {
+//     res.render('homepage'
+//    , { 
+//         title: 'Random$h!t.com Home'
+//    }
+//      );
+// });
 
-router.get('/cart', (req, res) => {
-  res.render('cart');
-});
+// router.get('/cart', (req, res) => {
+//   res.render('cart');
+// });
 
-app.get('/cart', (req,res) => {
-  res.render('cart');
-});
+// app.get('/cart', (req,res) => {
+//   res.render('cart');
+// });
 
-router.get('/login', (req, res) => {
-  res.render('login');
-});
+// router.get('/login', (req, res) => {
+//   res.render('login');
+// });
 
-router.get('/login', (req,res) => {
-  res.render('login');
-});
+// router.get('/login', (req,res) => {
+//   res.render('login');
+// });
 
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => {
