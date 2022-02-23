@@ -7,7 +7,7 @@ const path = require('path');
 const sequelize = require('./config/connection');
 const db = require('./models/index');
 const router = require('./controllers/api/user-routes');
-// const Op = db.Sequelize.Op
+
 
 
 app.use(express.json());
@@ -27,30 +27,6 @@ app.engine('handlebars', hbs.engine);
 
 app.use(routes);
 
-//routing
-// router.get('/', (req, res) => {
-//     res.render('homepage'
-//    , { 
-//         title: 'Random$h!t.com Home'
-//    }
-//      );
-// });
-
-// router.get('/cart', (req, res) => {
-//   res.render('cart');
-// });
-
-// app.get('/cart', (req,res) => {
-//   res.render('cart');
-// });
-
-// router.get('/login', (req, res) => {
-//   res.render('login');
-// });
-
-// router.get('/login', (req,res) => {
-//   res.render('login');
-// });
 
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => {
