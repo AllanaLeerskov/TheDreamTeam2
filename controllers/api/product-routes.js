@@ -117,13 +117,6 @@ router.get('/:id', (req, res) => {
     });
 });
 
-
-// router.post('/', (req, res) => {
-//   Product.create({
-//   id: req.body.id,
-//   return
-// });
-// });
   
   
   
